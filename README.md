@@ -169,6 +169,7 @@ Eventuelles Problem: Toolchain uses libraries from  host and not from sysroot. c
 Final config:
 * Install and enable dnsmasq in chroot
 * Enable SSH server in chroot 
+* Disable hciuart service for uart
 * Install zsh
 * Run chsh root --shell /bin/zsh
 * Run chsh pi --shell /bin/zsh
