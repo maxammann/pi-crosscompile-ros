@@ -1,0 +1,42 @@
+<launch>
+	<!-- vim: set ft=xml noet : -->
+	<!-- example launch script for PX4 based FCU's -->
+
+	<arg name="fcu_url" default="/dev/ttyS0:57600" />
+	<arg name="gcs_url" default="" />
+	<arg name="tgt_system" default="1" />
+	<arg name="tgt_component" default="1" />
+	<arg name="log_output" default="screen" />
+	<arg name="fcu_protocol" default="v2.0" />
+	<arg name="respawn_mavros" default="true" />
+
+	<include file="$(find mavros)/launch/node.launch">
+		<arg name="pluginlists_yaml" value="/home/pi/.ros/launch/px4_pluginlists.yaml" />
+		<arg name="config_yaml" value="/home/pi/.ros/launch/px4_config.yaml" />
+
+		<arg name="fcu_url" value="$(arg fcu_url)" />
+		<arg name="gcs_url" value="$(arg gcs_url)" />
+		<arg name="tgt_system" value="$(arg tgt_system)" />
+		<arg name="tgt_component" value="$(arg tgt_component)" />
+		<arg name="log_output" value="$(arg log_output)" />
+		<arg name="fcu_protocol" value="$(arg fcu_protocol)" />
+		<arg name="respawn_mavros" default="$(arg respawn_mavros)" />
+	</include>
+
+	<node type="raspicam_node" pkg="raspicam_node" name="raspicam_node" output="screen" respawn="true">
+		<param name="private_topics" value="true"/>
+
+		<param name="camera_frame_id" value="raspicam"/>
+		<param name="enable_raw" value="false"/>
+		<param name="enable_imv" value="false"/>
+		<param name="camera_id" value="0"/>
+
+		<param name="camera_info_url" value="package://raspicam_node/camera_info/raspicam.yaml"/>
+		<param name="camera_name" value="raspicam"/>
+		<param name="width" value="3280"/>
+		<param name="height" value="2464"/>
+		<param name="quality" value="95"/>
+
+		<param name="framerate" value="1"/>
+	</node>
+</launch>

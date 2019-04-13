@@ -1,0 +1,13 @@
+This system contains the following relevant software:
+  * ROS Melodic (compiled 2019-04-09)
+  * MAVROS (compiled 2019-04-09)
+  * raspicam_node (compiled 2019-04-09)
+  * opencv3 (compiled 2019-04-09)
+  * tinyxml 6 (compiled 2019-04-09)
+  * zsh
+
+The interface usb0 with the ip 192.168.44.1 is provided by using the USB gadget. A DHCP server is running on that interface. 
+The camera and serial has been enabled.
+
+This system is property of SearchWing Augsburg.
+

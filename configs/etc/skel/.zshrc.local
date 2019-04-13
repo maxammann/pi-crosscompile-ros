@@ -1,0 +1,3 @@
+echo "Activating ROS Melodic Environment..."
+source /opt/ros/melodic/setup.zsh
+echo "ROS Meldodic is now enabled."

@@ -1,0 +1,15 @@
+[Unit]
+Description=record-ros
+After=launch-ros.service
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/record-ros
+User=pi
+Restart=on-failure
+RestartSec=10
+KillSignal=2
+
+[Install]
+WantedBy=multi-user.target
+

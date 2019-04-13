@@ -1,0 +1,5 @@
+<launch>
+
+<node pkg="rosbag" type="record" name="record" args="record --split --duration=2m --output-prefix /media/recordings/searchwing /tf /mavros/global_position/global /mavros/global_position/local /mavros/local_position/pose /mavros/time_reference /raspicam_node/camera_info /raspicam_node/image/compressed /diagnostics /rosout"/>   
+
+</launch>

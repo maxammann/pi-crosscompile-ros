@@ -1,0 +1,12 @@
+[Unit]
+Description=launch-ros
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/launch-ros
+User=pi
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+

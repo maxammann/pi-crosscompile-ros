@@ -1,0 +1,5 @@
+<launch>
+
+<node pkg="rosbag" type="record" name="record" args="record --split --duration=2m --output-prefix /media/recordings/searchwing --all"/>   
+
+</launch>
