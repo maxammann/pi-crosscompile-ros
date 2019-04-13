@@ -1,0 +1,17 @@
+- tar:
+    local-name: image_common
+    uri: https://github.com/ros-perception/image_common/archive/1.11.13.tar.gz
+    version: image_common-1.11.13
+- tar:
+    local-name: image_transport_plugins
+    uri: https://github.com/ros-perception/image_transport_plugins/archive/1.9.5.tar.gz
+    version: image_transport_plugins-1.9.5
+- tar:
+    local-name: vision_opencv
+    uri: https://github.com/ros-perception/vision_opencv/archive/1.13.0.tar.gz
+    version: vision_opencv-1.13.0
+- tar:
+    local-name: rosbag_migration_rule
+    uri: https://github.com/ros-gbp/rosbag_migration_rule-release/archive/release/melodic/rosbag_migration_rule/1.0.0-0.tar.gz
+    version: rosbag_migration_rule-release-release-melodic-rosbag_migration_rule-1.0.0-0
+

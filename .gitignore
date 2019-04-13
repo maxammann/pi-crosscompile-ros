@@ -1,0 +1,6 @@
+*.img
+*.tar.*
+*.gz
+*.zip
+
+crosscompile/sysroot/

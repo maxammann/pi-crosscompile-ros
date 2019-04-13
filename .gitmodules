@@ -1,0 +1,6 @@
+[submodule "crosscompile/tinyxml2"]
+	path = crosscompile/tinyxml2
+	url = https://github.com/leethomason/tinyxml2.git
+[submodule "crosscompile/console_bridge"]
+	path = crosscompile/console_bridge
+	url = https://github.com/ros/console_bridge.git
