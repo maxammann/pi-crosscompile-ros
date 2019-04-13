@@ -59,7 +59,7 @@
 dtoverlay=dwc2
 
 # Enable serial
-enable_uart=1
+dtoverlay=pi3-disable-bt
 
 # Enable camera with enough memory for full resolution
 start_x=1
