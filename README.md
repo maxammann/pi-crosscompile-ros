@@ -1,4 +1,4 @@
-The cross-compilation process is described here: https://maxammann.org/posts/2019/04/2019-04-13-crosscompiling-ros-raspbian/
+The cross-compilation process is described here: https://maxammann.org/posts/2019/04/crosscompiling-ros-raspbian/
 
 To setup the final image do the following:
 
